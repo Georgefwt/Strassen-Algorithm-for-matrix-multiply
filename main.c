@@ -1,15 +1,13 @@
-#pragma warning(disable:4996)
 #include<stdio.h>
 #include<time.h>
 #include"matrix.h"
-#define CLOCKS_PER_SEC ((clock_t)1000)
 
 int main() {
 	clock_t start, finish;
 	double duration;
 	FILE *pa, *pb;
-	pa = fopen("matrixA2048.txt", "r");
-	pb = fopen("matrixI2048.txt", "r");
+	pa = fopen("matrixA16.txt", "r");
+	pb = fopen("matrixI16.txt", "r");
 
 	int ma[MAXSIZE + 1][MAXSIZE + 1];
 	int mb[MAXSIZE + 1][MAXSIZE + 1];
@@ -23,13 +21,13 @@ int main() {
 	}
 
 	matrix a, b, c;
-
 	newmatrix(&a, ma,MAXSIZE,MAXSIZE);
 	newmatrix(&b, mb,MAXSIZE,MAXSIZE);
 	newmatrix(&c, mc, MAXSIZE, MAXSIZE);
 	start = clock();
 	regu_multi(&a, &b, &c);
 	finish = clock();
+	printf("hahah");
 	for (int i = 1; i <= 10; i++)
 	{
 		for (int j = 1; j <= 10; j++)

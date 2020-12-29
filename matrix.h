@@ -1,5 +1,5 @@
 #ifndef MAXSIZE
-#define MAXSIZE 2048
+#define MAXSIZE 16//change if necessary!
 #endif // !MAXSIZE
 
 typedef struct matrix {

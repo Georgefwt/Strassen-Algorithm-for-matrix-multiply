@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include"matrix.h"
 
-void copymatA(matrix *source, matrix *target, int ltrow, int ltcol, int row, int col) {//ÕâÀïrowºÍcolÖ¸¸´ÖÆ¾ØÕóµÄ´óÐ¡
+void copymatB(matrix *source, matrix *target, int ltrow, int ltcol, int row, int col) {//ï¿½ï¿½ï¿½ï¿½rowï¿½ï¿½colÖ¸ï¿½ï¿½ï¿½Æ¾ï¿½ï¿½ï¿½Ä´ï¿½Ð¡
 	target->row = row;
 	target->col = col;
 	//target->ltcol =source->ltcol+ltcol;
